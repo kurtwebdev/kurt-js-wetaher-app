@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="shortcut icon" href="#">
+    <title>Demo: Weather</title>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <span>simple<strong><i>WEATHER</i></strong></span>
+        </div><p>Powered by: <a href="https://www.metaweather.com/" target="_blank">Meta Weather</a></p>
+    </header>
+    <section>
+        <form class="form__search">
+            <label for="city">Enter a city: &nbsp;</label>
+            <!--when you add 'name="city" id="city"' the datalist remembers last inputs-->
+            <input list="cities" class="search__field">
+            <datalist id="cities">
+            </datalist>
+            <button class="btn btn__search">
+                <span>Search</span>
+            </button>
+            <div class="options__temp-dist">
+                <!-- <label for="temp_scales">Choose F&deg; or C&deg; </label> -->
+                <select name="temp_scales" id="temp_scales">
+                    <option value="c" >C&deg;</option>
+                    <option value="f" >F&deg;</option>
+                </select>
+                <select name="dist_mers" id="dist_mers">
+                    <option value="mi" data-dist_mers="mi">miles</option>
+                    <option value="km" data-dist_mers="km">Km</option>
+                </select>
+            </div>
+        </form>
+        <!-- div that holds the current weather -->
+        <div class="weather__current">
+            
+        </div>
+    
+        <!-- div that holds the 5 day forecast -->
+        <div class="weather__forecast">
+    
+            <!-- unordered list that holds the forecast weather -->
+            <ul class="forecast__list">
+    
+                <!-- list item for each forecasted day -->
+                
+    
+            </ul>
+        </div>
+    
+    </section>
+    <footer>
+        
+    </footer>
+    
+
+    </div>
+</body>
+</html>

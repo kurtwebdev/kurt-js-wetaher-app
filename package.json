@@ -1,0 +1,30 @@
+{
+  "name": "simple_weather_project",
+  "version": "1.0.0",
+  "description": "a simple demonstration of a weather app ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "rvrs-prox": "node src/js/app.js",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Kurt Tippenhauer",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
